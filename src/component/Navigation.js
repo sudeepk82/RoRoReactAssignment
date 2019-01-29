@@ -1,5 +1,4 @@
 import React from 'react';
-import ModuleBlock from './ModuleBlock';
 import TagBlock from './TagBlock';
 
 class Navigation extends React.Component {
