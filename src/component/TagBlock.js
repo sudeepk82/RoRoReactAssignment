@@ -12,7 +12,7 @@ class TagBlock extends React.Component {
         let screenWidth = window.innerWidth;
 
         return(
-            <div className="tag-box col-xs-12" style={{background:(currentTag?this.props.tags[currentTag-1].color:"grey"), width:(screenWidth<993?"100%":this.props.width+"%")}} >
+            <div className="tag-box col-xs-12" style={{background:(currentTag?this.props.tags[currentTag-1].color:"grey"), width:(screenWidth<1000?"100%":this.props.width+"%")}} >
                 <div className="container tag-name">
                     {this.props.modules[0].tagId?this.props.tags[this.props.modules[0].tagId -1].name:""}
                 </div>
