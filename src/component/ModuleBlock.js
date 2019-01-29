@@ -34,7 +34,7 @@ class ModuleBlock extends React.Component {
             );
 
         return(
-            <div id={"module"+this.props.id} className={"container-fluid col-md-"+this.props.part+" module_box"}>
+            <div id={"module"+this.props.id} className={"container-fluid col-xs-12 col-md-"+this.props.part+" module_box"}>
                     <div className="container-fluid text-center module-name">{this.props.moduleName}</div>
                     <div className="text-center module_status">
                         {moduleComplete}

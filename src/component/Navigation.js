@@ -48,7 +48,7 @@ class Navigation extends React.Component {
         }
 
         return(
-            <div className="container-fluid navigation-bar" >
+            <div className="container-fluid row col-xs-12 col-md-12 navigation-bar" >
                 {
                     content.map(
                         item => item
