@@ -1,19 +1,12 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-
-let tags = [
+{
+  "tags": [
     {"id": 1, "name": "Services Sales Skills and the Whiteboard Methodology", "color": "red"},
     {"id": 2, "name": "The Value behind Technology Support Services: From Reactive to Proactive", "color": "green"},
     {"id": 3, "name": "Success Factors", "color": "gray"},
     {"id": 4, "name": "Selling Value", "color": "violet"},
     {"id": 5, "name": "Best Practice", "color": "yellow"}
-];
-
-let modules = [
+  ],
+  "modules": [
     {"id": 1, "name": "Welcome to the Academy"},
     {"id": 2, "name": "Whiteboard Selling Methodology", "tagId": 1, "mandatory": true, "completed": true},
     {"id": 3, "name": "Basic Sales Skills", "tagId": 1, "mandatory": true, "completed": true},
@@ -27,13 +20,5 @@ let modules = [
     {"id": 11, "name": "Business Partner Best Practice", "tagId": 5, "mandatory": true, "completed": false},
     {"id": 12, "name": "Geography Specific Modules", "completed": false},
     {"id": 13, "name": "What's next?", "mandatory": true, "completed": false}
-];
-
-ReactDOM.render(<App modules={modules} tags={tags} />, document.getElementById('root'));
-
-document.getElementById("module"+modules.length).classList.add("last-module");
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+  ]
+}
